@@ -40,7 +40,7 @@ def predict_language(text):
 
 def main():
     st.title("Language Detection App for Beginners")
-    st.write("Enter a text to detect its language")
+    st.write("Enter a word or text to detect its language")
 
     text_input = st.text_input("Text Input")
     if st.button("Detect Language"):
