@@ -3,7 +3,6 @@ import pandas as pd
 from sklearn.preprocessing import LabelEncoder
 import re
 from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.model_selection import train_test_split
 from sklearn.naive_bayes import MultinomialNB
 
 # Load dataset
@@ -22,9 +21,6 @@ dataset['Text'] = dataset['Text'].str.lower()
 tfidf_v = TfidfVectorizer()
 X = tfidf_v.fit_transform(dataset['Text'])
 y = dataset['Language']
-
-# Train-test split
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
 
 # Naive Bayes
 nb = MultinomialNB()
