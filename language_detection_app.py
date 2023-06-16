@@ -43,7 +43,7 @@ def main():
     st.write("Enter a text to detect its language")
 
     text_input = st.text_input("Text Input")
-    if st.button("Predict"):
+    if st.button("Detect Language"):
         prediction = predict_language(text_input)
         st.write("The language is ", prediction)
 
