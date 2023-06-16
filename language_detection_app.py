@@ -39,7 +39,7 @@ def predict_language(text):
     return le.inverse_transform([prediction])[0]
 
 def main():
-    st.title("Language Detection App for Beginners")
+    st.title("Language Detection App for Language Learners")
     st.write("Enter a word or text to detect its language")
 
     text_input = st.text_input("Input the word or text here")
