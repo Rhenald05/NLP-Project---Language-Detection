@@ -24,7 +24,7 @@ y = dataset['Language']
 
 # Naive Bayes
 nb = MultinomialNB()
-nb.fit(X_train, y_train)
+nb.fit(X, y)
 
 def predict_language(text):
     processed_text = re.sub(r'[!@#$(),\n"%^&*:;~0-9]', ' ', text)
